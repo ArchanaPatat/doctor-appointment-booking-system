@@ -52,6 +52,18 @@ The system consists of three main user roles:
 
 ## Getting Started
 
+##DEFAULT USER ACCOUNTS OF THIS PROJECT
+ADMIN
+Email: admin@edoc.com
+Password: 123
+
+Doctor
+Email: doctor@edoc.com
+Password: 123
+
+Patient
+Email: patient@edoc.com
+Password: 123
 ### Requirements
 
 * XAMPP Server
