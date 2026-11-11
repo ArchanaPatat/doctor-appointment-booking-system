@@ -100,7 +100,8 @@ Password: 123
 
 ### Home Page
 
-(Add Screenshot)
+![Uploading Screenshot 2026-10-10 090504.png…]()
+
 
 ### Admin Dashboard
 
