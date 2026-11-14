@@ -1,142 +1,179 @@
 # Doctor Appointment Booking System
 
-Doctor Appointment Booking System is a simple web-based application developed using **PHP, HTML, CSS, JavaScript, and MySQL**. The system allows patients to book appointments online with doctors and helps healthcare organizations manage appointments efficiently.
+## Project Overview
 
-This platform provides an easy way for patients to find doctors based on their specialization, check available schedules, and book appointments. Doctors can manage their schedules and view appointment requests, while administrators can manage doctors, patients, and overall system operations.
+The Doctor Appointment Booking System is a web-based application developed using PHP and MySQL. It allows patients to book appointments with doctors and provides separate dashboards for administrators, doctors, and patients.
+
+The main purpose of this project is to simplify the appointment booking process and manage doctor, patient, and appointment information efficiently.
 
 ## Features
 
-### Admin
+### Admin Module
+- Admin login
+- Manage doctors
+- Manage patients
+- Manage specialties
+- Manage doctor schedules
+- View and manage appointments
 
-* Add, edit, and remove doctors
-* Manage doctor schedules and sessions
-* View patient details
-* Monitor appointment bookings
-* Manage system records
+### Doctor Module
+- Doctor login
+- View appointments
+- Manage appointment schedules
+- View patient details
 
-### Doctor
+### Patient Module
+- Patient registration and login
+- View available doctors
+- Search doctors by specialty
+- Book appointments
+- View appointment details
 
-* View appointment requests
-* Manage scheduled sessions
-* Access patient information
-* Update profile settings
-* Manage account details
+## Technologies Used
 
-### Patient
+| Technology | Purpose |
+|---|---|
+| PHP | Backend development |
+| MySQL | Database management |
+| HTML | Web page structure |
+| CSS | Styling |
+| JavaScript | Client-side functionality |
+| Bootstrap | Responsive user interface |
+| XAMPP | Local development environment |
 
-* Register and create an account
-* Search doctors by specialization
-* View available schedules
-* Book appointments online
-* View booking history
-* Update profile information
+## Project Structure
 
-## System Modules
+```text
+doctor-appointment-booking-system/
+│
+├── admin/
+├── doctor/
+├── patient/
+├── css/
+├── img/
+│
+├── connection.php
+├── create-account.php
+├── index.html
+├── login.php
+├── logout.php
+├── signup.php
+│
+├── SQL_Database_edoc.sql
+├── structure.txt
+├── SECURITY.md
+└── README.md
+```
 
-The system consists of three main user roles:
+## Installation and Setup
 
-1. **Administrator**
+Follow these steps to run the project locally.
 
-   * Manages doctors and schedules
-   * Oversees appointments and patient records
+### 1. Install XAMPP
 
-2. **Doctor**
+Download and install XAMPP on your computer.
 
-   * Handles appointment requests
-   * Manages availability and schedules
+### 2. Clone the Repository
 
-3. **Patient**
+```bash
+git clone https://github.com/ArchanaPatat/doctor-appointment-booking-system.git
+```
 
-   * Books appointments
-   * Tracks appointment history
+### 3. Move Project to XAMPP
 
-## Getting Started
+Copy the project folder into:
 
-##DEFAULT USER ACCOUNTS OF THIS PROJECT
-ADMIN
-Email: admin@edoc.com
-Password: 123
+```text
+C:\xampp\htdocs\
+```
 
-Doctor
-Email: doctor@edoc.com
-Password: 123
+### 4. Start XAMPP
 
-Patient
-Email: patient@edoc.com
-Password: 123
-### Requirements
+Open XAMPP Control Panel and start:
 
-* XAMPP Server
-* PHP
-* MySQL
+- Apache
+- MySQL
 
-### Installation Steps
+### 5. Create the Database
 
-1. Start Apache and MySQL from XAMPP Control Panel.
-2. Extract the project source code.
-3. Copy the project folder into the **htdocs** directory.
-4. Open PHPMyAdmin:
+1. Open `http://localhost/phpmyadmin`
+2. Create a database named `edoc`.
+3. Select the `edoc` database.
+4. Click on the Import tab.
+5. Choose `SQL_Database_edoc.sql`.
+6. Click Import.
 
-   ```
-   http://localhost/phpmyadmin
-   ```
-5. Create a database named:
+### 6. Configure Database Connection
 
-   ```
-   edoc
-   ```
-6. Import the provided SQL file:
+Open `connection.php` and check the database configuration according to your local MySQL setup.
 
-   ```
-   DATABASE edoc.sql
-   ```
-7. Open the project in your browser:
+### 7. Run the Project
 
-   ```
-   http://localhost/doctor-appointment-booking-system/
-   ```
+Open your browser and visit:
+
+```text
+http://localhost/edoc-doctor-appointment-system-main/
+```
+
+## Database Information
+
+The project uses MySQL for storing and managing application data.
+
+Main database tables:
+
+- `admin`
+- `doctor`
+- `patient`
+- `specialties`
+- `schedule`
+- `appointment`
+- `webuser`
+
+Database improvements include:
+
+- InnoDB storage engine for all seven tables.
+- Primary key relationships.
+- Foreign key constraints to maintain referential integrity.
+- Cascading rules for related records.
 
 ## Screenshots
 
 ### Home Page
-
-<img width="1917" height="916" alt="Home" src="https://github.com/user-attachments/assets/2ace9af4-491f-46a0-9e02-47a076516a90" />
-
-
-
+![Home Page](Home.png)
 
 ### Admin Dashboard
-
-<img width="1920" height="1080" alt="Admin" src="https://github.com/user-attachments/assets/ed7aec12-9738-4b26-b557-93f9f6249b15" />
-
+![Admin Dashboard](Admin.png)
 
 ### Doctor Dashboard
-
-<img width="1917" height="978" alt="doctor" src="https://github.com/user-attachments/assets/0cc35b08-72b1-4eae-b1de-e51473927cfc" />
-
-
+![Doctor Dashboard](doctor.png)
 
 ### Patient Dashboard
+![Patient Dashboard](patient.png)
 
-<img width="1915" height="975" alt="patient" src="https://github.com/user-attachments/assets/d23585b6-1a5f-4a47-ba73-656eaca83997" />
+## Default Demo Accounts
 
+The following demo credentials are available in the project:
 
+| Role | Email | Password |
+|---|---|---|
+| Admin | admin@edoc.com | 123 |
+| Doctor | doctor@edoc.com | 123 |
+| Patient | patient@edoc.com | 123 |
 
-## Technologies Used
+**Note:** These are demo credentials for local testing only. Do not use default credentials in a public production deployment.
 
-* PHP
-* HTML5
-* CSS3
-* JavaScript
-* MySQL
-* Apache Server
-* XAMPP
+## Future Improvements
+
+- Improve application security.
+- Implement secure password handling.
+- Add additional appointment management features.
+- Improve user interface and responsiveness.
 
 ## Author
 
 **Archana Patat**
 
-GitHub: https://github.com/ArchanaPatat
+- GitHub: https://github.com/ArchanaPatat
 
 ## License
 
