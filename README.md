@@ -100,20 +100,27 @@ Password: 123
 
 ### Home Page
 
-![Uploading Screenshot 2026-10-10 090504.png…]()
+<img width="1917" height="916" alt="Home" src="https://github.com/user-attachments/assets/2ace9af4-491f-46a0-9e02-47a076516a90" />
+
+
 
 
 ### Admin Dashboard
 
-(Add Screenshot)
+<img width="1920" height="1080" alt="Admin" src="https://github.com/user-attachments/assets/ed7aec12-9738-4b26-b557-93f9f6249b15" />
+
 
 ### Doctor Dashboard
 
-(Add Screenshot)
+<img width="1917" height="978" alt="doctor" src="https://github.com/user-attachments/assets/0cc35b08-72b1-4eae-b1de-e51473927cfc" />
+
+
 
 ### Patient Dashboard
 
-(Add Screenshot)
+<img width="1915" height="975" alt="patient" src="https://github.com/user-attachments/assets/d23585b6-1a5f-4a47-ba73-656eaca83997" />
+
+
 
 ## Technologies Used
 
